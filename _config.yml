@@ -1,0 +1,16 @@
+# Book settings
+title: Website Statis KAL
+author: Mahasiswa KAL - UTM
+logo: logo.png # Anda bisa menambahkan gambar logo.png di folder ini jika ingin menggunakan logo kustom
+
+# Execution settings
+execute:
+  execute_notebooks: auto
+
+# HTML settings
+html:
+  use_issues_button: false
+  use_repository_button: false
+  comments:
+    hypothesis: false
+    utterances: false

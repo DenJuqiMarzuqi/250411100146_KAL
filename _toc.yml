@@ -1,0 +1,18 @@
+# Table of contents
+format: jb-book
+root: intro
+parts:
+  - caption: Biodata Diri
+    chapters:
+      - file: biodata/index
+  - caption: Materi Kuliah
+    chapters:
+      - file: materi/index
+        sections:
+          - file: materi/materi_1
+          - file: materi/notebook_contoh
+  - caption: Tugas Kuliah
+    chapters:
+      - file: tugas/index
+        sections:
+          - file: tugas/tugas_1
