@@ -31,7 +31,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install jupyter-book numpy
+        pip install jupyter-book==1.0.3 numpy
 
     - name: Build the book
       run: |
