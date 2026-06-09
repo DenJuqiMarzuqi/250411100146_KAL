@@ -2,12 +2,14 @@
 
 /* Gaya untuk gambar logo */
 .navbar-brand .logo__image {
-  width: 120px !important;
-  height: 120px !important;
+  width: 500px !important;
+  height: 500px !important;
   border-radius: 50% !important;
   object-fit: cover !important;
-  object-position: top center !important; /* Agar bagian wajah/mahkota di atas terfokus dengan baik */
-  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) !important; /* Transisi elastis (springy) agar efek timbul terasa hidup */
+  object-position: top center !important;
+  /* Agar bagian wajah/mahkota di atas terfokus dengan baik */
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  /* Transisi elastis (springy) agar efek timbul terasa hidup */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12) !important;
   border: 3px solid rgba(0, 0, 0, 0.08) !important;
   margin: 15px auto !important;
