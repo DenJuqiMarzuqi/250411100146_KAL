@@ -2,8 +2,8 @@
 
 /* Gaya untuk gambar logo */
 .navbar-brand .logo__image {
-  width: 180px !important;
-  height: 180px !important;
+  width: 300px !important;
+  height: 300px !important;
   max-width: 100% !important;
   aspect-ratio: 1 / 1 !important;
   border-radius: 20px !important; /* Sudut tumpul sempurna (rounded square) */
