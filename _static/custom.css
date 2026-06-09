@@ -2,25 +2,25 @@
 
 /* Gaya untuk gambar logo */
 .navbar-brand .logo__image {
-  width: 500px !important;
-  height: 500px !important;
-  border-radius: 50% !important;
+  width: 180px !important;
+  height: 180px !important;
+  max-width: 100% !important;
+  aspect-ratio: 1 / 1 !important;
+  border-radius: 20px !important; /* Sudut tumpul sempurna (rounded square) */
   object-fit: cover !important;
-  object-position: top center !important;
-  /* Agar bagian wajah/mahkota di atas terfokus dengan baik */
-  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
-  /* Transisi elastis (springy) agar efek timbul terasa hidup */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12) !important;
-  border: 3px solid rgba(0, 0, 0, 0.08) !important;
+  object-position: top center !important; /* Agar bagian wajah & mahkota terfokus */
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) !important; /* Animasi elastis */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important; /* Bayangan halus awal */
+  border: none !important; /* Tanpa garis luar */
   margin: 15px auto !important;
   display: block !important;
 }
 
-/* Efek hover timbul (elevation + scale + shadow) */
+/* Efek hover timbul dengan bayangan yang lebih tebal tanpa border */
 .navbar-brand:hover .logo__image {
-  transform: translateY(-10px) scale(1.08) !important;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.22) !important;
-  border-color: var(--pst-color-primary, #3f51b5) !important;
+  transform: translateY(-8px) scale(1.05) !important;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25) !important; /* Bayangan timbul dramatis */
+  border: none !important;
 }
 
 /* Penyelarasan wadah navbar agar berada di tengah */
