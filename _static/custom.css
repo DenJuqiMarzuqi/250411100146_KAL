@@ -1,5 +1,13 @@
 /* Custom CSS for Website Statis KAL */
 
+/* Mengubah warna primer tema (yang defaultnya ungu) menjadi biru muda */
+html, :root {
+  --pst-color-primary: #0288d1 !important; /* Biru muda */
+  --pst-color-primary-highlight: #03a9f4 !important; /* Biru muda terang */
+  --pst-color-link: #0288d1 !important;
+  --pst-color-link-hover: #03a9f4 !important;
+}
+
 /* Gaya untuk gambar logo */
 .navbar-brand .logo__image {
   width: 300px !important;
