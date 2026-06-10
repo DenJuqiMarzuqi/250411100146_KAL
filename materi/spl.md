@@ -397,13 +397,13 @@ B = Matrix([
 
 AB = A.augment(B)
 
-print("Matriks Koefisien:")
+show(LatexExpr(r"\\textbf{Matriks Koefisien}"))
 show(A)
 
-print("Matriks Konstanta:")
+show(LatexExpr(r"\\textbf{Matriks Konstanta}"))
 show(B)
 
-print("Matriks Augmentasi:")
+show(LatexExpr(r"\\textbf{Matriks Augmentasi}"))
 show(AB)
 
 x,y,z = var('x y z')
@@ -412,8 +412,10 @@ eq1 = x + y + z == 6
 eq2 = 2*x - y + z == 5
 eq3 = x + 2*y - z == 4
 
-print("Solusi:")
-show(solve([eq1,eq2,eq3],x,y,z))
+solusi = solve([eq1,eq2,eq3],x,y,z)
+
+show(LatexExpr(r"\\textbf{Solusi SPL}"))
+show(solusi)
 `
 });
 </script>
