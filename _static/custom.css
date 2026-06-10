@@ -1,11 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* Custom CSS for Website Statis KAL */
 
-/* Mengubah warna primer tema (yang defaultnya ungu) menjadi biru muda */
+/* Mengubah warna primer tema (yang defaultnya ungu) menjadi biru muda & Font Roboto */
 html, :root {
   --pst-color-primary: #0288d1 !important; /* Biru muda */
   --pst-color-primary-highlight: #03a9f4 !important; /* Biru muda terang */
   --pst-color-link: #0288d1 !important;
   --pst-color-link-hover: #03a9f4 !important;
+  --pst-font-family-base: 'Roboto', sans-serif !important;
+  --pst-font-family-heading: 'Roboto', sans-serif !important;
+}
+
+body, p, li, a, span, div, h1, h2, h3, h4, h5, h6, button, input, select, textarea {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+/* Membatasi ketebalan maksimum font bold menjadi 700 */
+h1, h2, h3, h4, h5, h6, b, strong, th, .font-weight-bold, 
+[style*="font-weight: bold"], [style*="font-weight:bold"], 
+[style*="font-weight: 700"], [style*="font-weight:700"], 
+[style*="font-weight: 800"], [style*="font-weight:800"], 
+[style*="font-weight: 900"], [style*="font-weight:900"] {
+  font-weight: 700 !important;
 }
 
 /* Gaya untuk gambar logo */
