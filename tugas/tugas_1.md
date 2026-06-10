@@ -1,4 +1,4 @@
-# **Tugas Eliminasi Menggunakan Metode Gauss (Gaussian Elimination)**
+# **Tugas 1 : Eliminasi Menggunakan Metode Gauss (Gaussian Elimination)**
 
 ## **Tujuan Tugas**
 

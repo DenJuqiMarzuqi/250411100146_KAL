@@ -20,4 +20,7 @@ parts:
       - file: tugas/tugas_1
       - file: tugas/tugas_2
       - file: tugas/tugas_3
+      - file: tugas/tugas_4
+      - file: tugas/tugas_5
+
 
