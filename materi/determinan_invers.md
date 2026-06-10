@@ -1,31 +1,39 @@
 # **Determinan dan Invers Matriks**
 
-## **Menghitung Determinan**
+Halaman ini membahas cara mencari determinan matriks dan menyelesaikan Sistem Persamaan Linear (SPL) menggunakan matriks invers.
 
-Misalkan terdapat matriks persegi $A$:
+---
+
+## **1. Menghitung Determinan**
+
+Misalkan kita punya matriks persegi $A$:
+
 $$
 A = [a_{ij}]_{n \times n}
 $$
 
 ### **Matriks $1 \times 1$**
-Jika ukuran matriks persegi hanya $1 \times 1$, nilai determinannya adalah elemen tunggal dari matriks tersebut:
+Jika ukuran matriks hanya $1 \times 1$, determinannya adalah nilai elemen itu sendiri:
+
 $$
 \det(A) = a_{11}
 $$
 
 ### **Matriks $n \times n$ ($n \geq 2$)**
-Untuk matriks berukuran $2 \times 2$ atau lebih besar, kita dapat menggunakan metode ekspansi kofaktor (misalnya pada baris pertama):
+Untuk matriks berukuran $2 \times 2$ atau lebih besar, kita gunakan metode ekspansi kofaktor pada baris pertama:
+
 $$
 \det(A) = \sum_{j=1}^{n} (-1)^{1+j} \, a_{1j} \, \det(A_{1j})
 $$
 
-*Keterangan: $A_{1j}$ adalah submatriks sisa setelah baris ke-1 dan kolom ke-$j$ dihapus dari matriks utama $A$.*
+*Catatan: $A_{1j}$ adalah matriks sisa setelah kita menghapus baris ke-1 dan kolom ke-$j$ dari matriks $A$.*
 
 ---
 
-## **Menyelesaikan SPL $4 \times 4$ dengan Matriks Invers**
+## **2. Menyelesaikan SPL $4 \times 4$ dengan Invers**
 
-Diberikan sebuah Sistem Persamaan Linear (SPL) dalam bentuk representasi matriks:
+Diberikan SPL dalam bentuk matriks:
+
 $$
 \begin{bmatrix} 
 1 & 1 & 1 & 1 \\ 
@@ -46,20 +54,98 @@ x_4
 \end{bmatrix}
 $$
 
-Penyelesaian SPL ini dapat dicari dengan menggunakan hubungan rumus invers:
+Solusi SPL ini dicari menggunakan rumus:
+
 $$
 AX = B \Rightarrow X = A^{-1}B
 $$
 
-Kita dapat menghitung matriks invers $A^{-1}$ menggunakan metode adjoin atau operasi baris dasar untuk menghasilkan solusi nilai variabel $X$.
+Kita akan mencari matriks invers $A^{-1}$ dengan metode **Eliminasi Gauss-Jordan**.
 
----
+### **Langkah 1: Buat Matriks Gabungan $[A|I]$**
+Gabungkan matriks $A$ dengan matriks identitas $4 \times 4$:
 
-## **Visualisasi Interaktif (GeoGebra)**
+$$
+\left[ 
+\begin{array}{cccc|cccc} 
+1 & 1 & 1 & 1 & 1 & 0 & 0 & 0 \\ 
+2 & -1 & 1 & -1 & 0 & 1 & 0 & 0 \\ 
+1 & 2 & -1 & 1 & 0 & 0 & 1 & 0 \\ 
+3 & -1 & 2 & 1 & 0 & 0 & 0 & 1 
+\end{array} \right]
+$$
 
-[Ini Geogebra isi sendiri]
+Lakukan OBE pada kolom pertama untuk membuat nol angka di bawah pivot baris pertama:
+* $R_2 - 2R_1 \rightarrow R_2$
+* $R_3 - R_1 \rightarrow R_3$
+* $R_4 - 3R_1 \rightarrow R_4$
 
----
+Hasil sementara:
 
-## **Kesimpulan**
-Determinan dan invers matriks adalah alat krusial untuk menganalisis sifat-sifat matriks persegi dan mencari penyelesaian dari sistem persamaan linear secara langsung. Jika determinan suatu matriks bernilai nol ($\det(A) = 0$), maka matriks tersebut tidak memiliki invers (matriks singular).
+$$
+\left[ 
+\begin{array}{cccc|cccc} 
+1 & 1 & 1 & 1 & 1 & 0 & 0 & 0 \\ 
+0 & -3 & -1 & -3 & -2 & 1 & 0 & 0 \\ 
+0 & 1 & -2 & 0 & -1 & 0 & 1 & 0 \\ 
+0 & -4 & -1 & -2 & -3 & 0 & 0 & 1 
+\end{array} \right]
+$$
+
+### **Langkah 2: Hasil Akhir Invers ($A^{-1}$)**
+Selesaikan OBE Gauss-Jordan sampai ruas kiri menjadi matriks identitas. Hasil di ruas kanan adalah matriks invers kita:
+
+$$
+A^{-1} = \frac{1}{13} 
+\begin{bmatrix} 
+-3 & 3 & 4 & 2 \\ 
+9 & 4 & 1 & -6 \\ 
+11 & 2 & -6 & -3 \\ 
+-4 & -9 & 1 & 7 
+\end{bmatrix}
+$$
+
+### **Langkah 3: Hitung Nilai Variabel ($X = A^{-1}B$)**
+Kalikan matriks $A^{-1}$ dengan kolom konstanta $B = [10, -1, 6, 11]^T$.
+
+* **Hitung $x_1$**:
+  
+  $$
+  x_1 = \frac{1}{13} [(-3 \times 10) + (3 \times -1) + (4 \times 6) + (2 \times 11)] = \frac{13}{13} = 1
+  $$
+
+* **Hitung $x_2$**:
+  
+  $$
+  x_2 = \frac{1}{13} [(9 \times 10) + (4 \times -1) + (1 \times 6) + (-6 \times 11)] = \frac{26}{13} = 2
+  $$
+
+* **Hitung $x_3$**:
+  
+  $$
+  x_3 = \frac{1}{13} [(11 \times 10) + (2 \times -1) + (-6 \times 6) + (-3 \times 11)] = \frac{39}{13} = 3
+  $$
+
+* **Hitung $x_4$**:
+  
+  $$
+  x_4 = \frac{1}{13} [(-4 \times 10) + (-9 \times -1) + (1 \times 6) + (7 \times 11)] = \frac{52}{13} = 4
+  $$
+
+### **Solusi Akhir**
+Nilai variabel yang memenuhi sistem adalah:
+
+$$
+X = 
+\begin{bmatrix} 
+x_1 \\ 
+x_2 \\ 
+x_3 \\ 
+x_4 
+\end{bmatrix} = \begin{bmatrix} 
+1 \\ 
+2 \\ 
+3 \\ 
+4 
+\end{bmatrix}
+$$
