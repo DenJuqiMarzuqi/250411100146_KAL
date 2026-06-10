@@ -133,3 +133,28 @@ Persamaan non linier adalah persamaan yang tidak memenuhi sifat-sifat persamaan 
 ## **Kesimpulan**
 
 Sistem Persamaan Linier adalah kumpulan beberapa persamaan linier yang saling berkaitan dan memiliki variabel yang sama. Tujuan penyelesaiannya adalah mencari nilai variabel yang memenuhi seluruh persamaan secara bersamaan. Konsep ini menjadi dasar dalam berbagai metode penyelesaian matematika, terutama dalam Aljabar Linear dan representasi matriks.
+
+---
+
+## **Solusi Sistem Persamaan Linier**
+
+### **Definisi Solusi Sistem Persamaan Linier**
+Solusi Sistem Persamaan Linier (SPL) adalah nilai atau himpunan nilai variabel yang memenuhi seluruh persamaan dalam sistem secara bersamaan. Dengan kata lain, ketika nilai variabel tersebut disubstitusikan ke setiap persamaan dalam sistem, semua persamaan akan menjadi benar.
+
+Dalam Sistem Persamaan Linier, tujuan utama penyelesaian adalah mencari solusi yang memenuhi semua persamaan yang ada. Jika suatu nilai hanya memenuhi sebagian persamaan tetapi tidak memenuhi persamaan lainnya, maka nilai tersebut bukan merupakan solusi dari sistem.
+
+### **Bentuk Solusi Sistem Persamaan Linier**
+Misalkan terdapat sistem persamaan:
+
+$$
+\left\{
+\begin{aligned}
+x + y &= 8 \\
+x - y &= 2
+\end{aligned}
+\right.
+$$
+
+1. **Solusi Tunggal**: Terdapat satu nilai variabel yang memenuhi seluruh persamaan (misal pada sistem di atas, solusinya adalah $x = 5$ dan $y = 3$).
+2. **Tak Hingga Solusi**: Terdapat tak hingga banyaknya nilai variabel yang memenuhi seluruh persamaan.
+3. **Tidak Ada Solusi**: Terdapat tidak ada nilai variabel yang memenuhi seluruh persamaan.
