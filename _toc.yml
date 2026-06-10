@@ -14,6 +14,10 @@ parts:
       - file: materi/sistem_operasi
       - file: materi/matriks_transpose
       - file: materi/svd
+      - file: materi/vektor
   - caption: Tugas Kuliah
     chapters:
       - file: tugas/tugas_1
+      - file: tugas/tugas_2
+      - file: tugas/tugas_3
+
