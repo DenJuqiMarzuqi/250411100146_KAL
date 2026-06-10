@@ -353,9 +353,71 @@ Matriks augmentasi adalah matriks yang diperoleh dari penggabungan matriks koefi
 
 dan digunakan untuk mempermudah penyelesaian SPL melalui operasi baris elementer, khususnya pada metode Eliminasi Gauss dan Eliminasi Gauss-Jordan.
 
-## **Visualisasi Interaktif (GeoGebra)**
+## **Visualisasi & Simulasi Komputasi**
+### **1. Visualisasi Matriks GeoGebra**
+Berikut adalah lembar kerja GeoGebra interaktif untuk memvisualisasikan bagaimana koefisien persamaan tersusun menjadi baris dan kolom dalam matriks:
+<iframe src="https://www.geogebra.org/calculator/nj7ydnmr?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
-[Ini Geogebra isi sendiri]
+### **2. Visualisasi Solusi Geometri (Titik Potong)**
+Garis atau bidang persamaan linear saling berpotongan pada satu titik yang merepresentasikan solusi tunggal sistem tersebut:
+<iframe src="https://www.geogebra.org/calculator/nj7ydnmr?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+Hasil visualisasi menggunakan GeoGebra menunjukkan bahwa ketiga bidang berpotongan pada satu titik, yaitu:
+
+$$
+(1,\,2,\,3)
+$$
+
+Titik tersebut merupakan solusi tunggal dari sistem persamaan linear yang diberikan.
+
+### **3. Komputasi Aljabar dengan SymPy (Python)**
+Gunakan kode Python berikut menggunakan pustaka sympy untuk menghitung solusi eksak dari sistem persamaan linear di atas secara simbolis:
+
+```{raw} html
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<div id="sagecell-matriks"></div>
+
+<script>
+sagecell.makeSagecell({
+    inputLocation: '#sagecell-matriks',
+    evalButtonText: 'Proses',
+    code: `
+A = Matrix([
+[1, 1, 1],
+[2,-1, 1],
+[1, 2,-1]
+])
+
+B = Matrix([
+[6],
+[5],
+[4]
+])
+
+AB = A.augment(B)
+
+print("Matriks Koefisien:")
+show(A)
+
+print("Matriks Konstanta:")
+show(B)
+
+print("Matriks Augmentasi:")
+show(AB)
+
+x,y,z = var('x y z')
+
+eq1 = x + y + z == 6
+eq2 = 2*x - y + z == 5
+eq3 = x + 2*y - z == 4
+
+print("Solusi:")
+show(solve([eq1,eq2,eq3],x,y,z))
+`
+});
+</script>
+```
 
 
 
