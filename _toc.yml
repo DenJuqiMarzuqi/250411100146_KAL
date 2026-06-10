@@ -11,6 +11,7 @@ parts:
       - file: materi/eliminasi_gaussian
       - file: materi/determinan_invers
       - file: materi/dekomposisi_qr
+      - file: materi/sistem_operasi
   - caption: Tugas Kuliah
     chapters:
       - file: tugas/tugas_1
