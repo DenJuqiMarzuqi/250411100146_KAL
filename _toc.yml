@@ -7,15 +7,10 @@ parts:
       - file: biodata/index
   - caption: Materi Kuliah
     chapters:
-      - file: materi/index
-        sections:
-          - file: materi/spl
-          - file: materi/eliminasi_gaussian
-          - file: materi/determinan_invers
-          - file: materi/dekomposisi_qr
-          - file: materi/notebook_contoh
+      - file: materi/spl
+      - file: materi/eliminasi_gaussian
+      - file: materi/determinan_invers
+      - file: materi/dekomposisi_qr
   - caption: Tugas Kuliah
     chapters:
-      - file: tugas/index
-        sections:
-          - file: tugas/tugas_1
+      - file: tugas/tugas_1
