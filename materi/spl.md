@@ -122,11 +122,6 @@ Persamaan non linier adalah persamaan yang tidak memenuhi sifat-sifat persamaan 
 | **Bentuk grafik** | Garis lurus | Kurva atau bentuk lain |
 | **Kompleksitas penyelesaian** | Relatif sederhana | Lebih kompleks |
 | **Contoh** | $2x + y = 5$ | $x^2 + y = 5$ |
----
-
-## **Visualisasi Interaktif (GeoGebra)**
-
-[Ini Geogebra isi sendiri]
 
 ---
 
@@ -156,12 +151,16 @@ x - y &= 2
 $$
 
 Pasangan nilai:
+
 $$
 x = 5,\quad y = 3
 $$
 
+1. **Solusi Tunggal**: Terdapat satu nilai variabel yang memenuhi seluruh persamaan (misal pada sistem di atas, solusinya adalah:
 
-1. **Solusi Tunggal**: Terdapat satu nilai variabel yang memenuhi seluruh persamaan (misal pada sistem di atas, solusinya adalah $x = 5$ dan $y = 3$).
+$$
+(x, y) = (5, 3)
+$$
 2. **Tak Hingga Solusi**: Terdapat tak hingga banyaknya nilai variabel yang memenuhi seluruh persamaan.
 3. **Tidak Ada Solusi**: Terdapat tidak ada nilai variabel yang memenuhi seluruh persamaan.
 
@@ -189,29 +188,174 @@ dengan:
 Representasi matriks digunakan untuk mempermudah penyelesaian Sistem Persamaan Linier, terutama pada sistem yang memiliki banyak persamaan dan variabel.
 
 ### **Contoh Representasi Matriks SPL**
-
 Misalkan diberikan Sistem Persamaan Linier sebagai berikut:
 
-$$ 
-\begin{aligned} 
-2x + 3y &= 7 \\ 
-4x - y &= 3 
-\end{aligned} 
+$$
+\begin{cases}
+2x + y = 5 \\
+x + 3y = 7
+\end{cases}
 $$
 
 Representasi matriks dari sistem persamaan linier tersebut adalah:
+
+**Bentuk Matriks Koefisien**
+Koefisien dari setiap variabel disusun menjadi:
+
+$$
+A =
+\begin{bmatrix}
+2 & 1 \\
+1 & 3
+\end{bmatrix}
+$$
+
+**Bentuk Matriks Variabel**
+Variabel-variabel disusun menjadi:
+
+$$
+X = 
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+$$
+
+**Bentuk Matriks Konstanta**
+Konstanta pada ruas kanan disusun menjadi:
+
+$$
+B =
+\begin{bmatrix}
+5 \\
+7
+\end{bmatrix}
+$$
+
+**Bentuk Matriks SPL**
+Sehingga sistem persamaan tersebut dapat dituliskan sebagai:
+
 $$
 \begin{bmatrix}
-2 & 3 \\
-4 & -1
+2 & 1 \\
+1 & 3
 \end{bmatrix}
 \begin{bmatrix}
 x \\
 y
 \end{bmatrix}
-= 
+=
 \begin{bmatrix}
-7 \\
-3
+5 \\
+7
 \end{bmatrix}
 $$
+
+Secara singkat:
+
+$$
+AX = B
+$$
+
+### **Kesimpulan**
+Representasi matriks Sistem Persamaan Linier adalah penyajian SPL ke dalam bentuk matriks dengan memisahkan koefisien, variabel, dan konstanta. Bentuk ini memudahkan proses perhitungan and menjadi dasar berbagai metode penyelesaian SPL seperti eliminasi Gauss, Gauss-Jordan, invers matriks, dan aturan Cramer.
+
+---
+
+## **Matriks Augmentasi**
+
+### **Definisi Matriks Augmentasi**
+Matriks augmentasi adalah matriks yang diperoleh dengan menggabungkan matriks koefisien dan matriks konstanta dari suatu Sistem Persamaan Linier (SPL) ke dalam satu matriks. Penggabungan tersebut dilakukan dengan menempatkan kolom konstanta di sebelah kanan matriks koefisien yang dipisahkan oleh garis vertikal.
+
+Matriks augmentasi digunakan untuk menyederhanakan penulisan Sistem Persamaan Linier dan mempermudah proses penyelesaian menggunakan metode operasi baris elementer, seperti Eliminasi Gauss dan Eliminasi Gauss-Jordan.
+
+Secara umum, jika suatu Sistem Persamaan Linier dinyatakan dalam bentuk:
+
+$$
+AX = B
+$$
+
+maka matriks augmentasinya ditulis sebagai:
+
+$$
+[A \mid B]
+$$
+
+di mana:
+- $A$ adalah matriks koefisien,
+- $B$ adalah matriks konstanta,
+- $[A \mid B]$ adalah matriks augmentasi.
+
+### **Contoh Matriks Augmentasi**
+Dengan menggabungkan matriks koefisien dan matriks konstanta, diperoleh matriks augmentasi:
+
+$$
+\left[
+\begin{array}{cc|c}
+2 & 1 & 5 \\
+1 & 3 & 7
+\end{array}
+\right]
+$$
+
+---
+
+### **Contoh Lain Bentuk Matriks Augmentasi**
+Misalkan diberikan Sistem Persamaan Linier sebagai berikut:
+
+$$
+\begin{cases}
+x + y + z = 6 \\
+2x - y + z = 5 \\
+x + 2y - z = 4
+\end{cases}
+$$
+
+#### **Matriks Koefisien**
+
+$$
+\begin{bmatrix}
+1 & 1 & 1 \\
+2 & -1 & 1 \\
+1 & 2 & -1
+\end{bmatrix}
+$$
+
+#### **Matriks Konstanta**
+
+$$
+\begin{bmatrix}
+6 \\
+5 \\
+4
+\end{bmatrix}
+$$
+
+#### **Matriks Augmentasi**
+
+$$
+\left[
+\begin{array}{ccc|c}
+1 & 1 & 1 & 6 \\
+2 & -1 & 1 & 5 \\
+1 & 2 & -1 & 4
+\end{array}
+\right]
+$$
+
+#### **Kesimpulan**
+
+Matriks augmentasi adalah matriks yang diperoleh dari penggabungan matriks koefisien dan matriks konstanta suatu Sistem Persamaan Linier. Matriks ini dituliskan dalam bentuk
+
+```{math}
+[A \mid B]
+```
+
+dan digunakan untuk mempermudah penyelesaian SPL melalui operasi baris elementer, khususnya pada metode Eliminasi Gauss dan Eliminasi Gauss-Jordan.
+
+## **Visualisasi Interaktif (GeoGebra)**
+
+[Ini Geogebra isi sendiri]
+
+
+
