@@ -16,6 +16,6 @@ Selamat datang di halaman biodata saya. Halaman ini berisi informasi singkat men
 
 ## **Kontak Saya**
 Anda dapat menghubungi saya melalui :
-- 💻 No Hp    : +62 895 8053 73200
-- 📊 Email    : denjuqi@gmail.com
-- 🧮 Instagram : @hdimarz
+-  No Hp    : +62 895 8053 73200
+-  Email    : denjuqi@gmail.com
+-  Instagram : @hdimarz

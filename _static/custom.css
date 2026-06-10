@@ -38,3 +38,10 @@ html, :root {
   display: flex !important;
   flex-direction: column !important;
 }
+
+/* Meratakan teks isi konten (paragraf & daftar list) kanan kiri (justify) secara global */
+.bd-content .bd-article-container p,
+.bd-content .bd-article-container li {
+  text-align: justify !important;
+  text-justify: inter-word !important; /* Optimasi perataan spasi antar kata */
+}
