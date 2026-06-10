@@ -106,6 +106,22 @@ Persamaan non linier adalah persamaan yang tidak memenuhi sifat-sifat persamaan 
 4. Dapat mengandung fungsi eksponensial, logaritma, atau trigonometri.
 5. Grafiknya berbentuk melengkung (tidak lurus).
 
+#### **Contoh Persamaan Non Linier**
+1. $x^2 + y^2 = 9$ (Lingkaran)
+2. $y = x^2 - 4$ (Parabola)
+3. $y = \sqrt{x}$ (Akar)
+4. $y = \sin(x)$ (Trigonometri)
+5. $y = 2^x$ (Eksponensial)
+
+### **Perbedaan Persamaan Linier dan Non Linier**
+
+| Aspek | Persamaan Linier | Persamaan Non Linier |
+| :--- | :--- | :--- |
+| **Pangkat variabel** | Pangkat satu | Pangkat lebih dari satu atau bentuk lainnya |
+| **Perkalian antarvariabel** | Tidak ada | Dapat ada |
+| **Bentuk grafik** | Garis lurus | Kurva atau bentuk lain |
+| **Kompleksitas penyelesaian** | Relatif sederhana | Lebih kompleks |
+| **Contoh** | $2x + y = 5$ | $x^2 + y = 5$ |
 ---
 
 ## **Visualisasi Interaktif (GeoGebra)**
