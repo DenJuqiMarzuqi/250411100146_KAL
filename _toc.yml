@@ -9,7 +9,10 @@ parts:
     chapters:
       - file: materi/index
         sections:
-          - file: materi/materi_1
+          - file: materi/spl
+          - file: materi/eliminasi_gaussian
+          - file: materi/determinan_invers
+          - file: materi/dekomposisi_qr
           - file: materi/notebook_contoh
   - caption: Tugas Kuliah
     chapters:

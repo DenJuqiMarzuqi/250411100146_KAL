@@ -45,3 +45,14 @@ html, :root {
   text-align: justify !important;
   text-justify: inter-word !important; /* Optimasi perataan spasi antar kata */
 }
+
+/* Memformat Table of Contents (sidebar kanan halaman / page-toc) */
+/* Setiap tautan judul utama tingkat h2 dibuat tebal (bold) */
+.bd-sidebar-secondary .page-toc ul.visible > li > a {
+  font-weight: bold !important;
+}
+
+/* Tautan sub-judul tingkat h3 atau di bawahnya dibuat biasa (normal weight) */
+.bd-sidebar-secondary .page-toc ul.visible > li > ul a {
+  font-weight: normal !important;
+}

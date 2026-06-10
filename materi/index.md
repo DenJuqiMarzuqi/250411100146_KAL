@@ -1,7 +1,12 @@
-# Materi Kuliah
+# **Daftar Materi Kuliah**
 
-Daftar materi perkuliahan Komputasi Aljabar Linier (KAL). Di sini Anda dapat menaruh catatan teori, rumus, dan latihan pemrograman terkait perkuliahan.
+Berikut adalah daftar materi perkuliahan Komputasi Aljabar Linier (KAL) yang disalin dari catatan pembelajaran:
 
-## Daftar Materi
-* [Materi 1: Pengenalan Komputasi Aljabar Linier](materi_1.md)
-* [Materi 2: Operasi Matriks dengan Python (Jupyter Notebook)](notebook_contoh.ipynb)
+## **Materi Teori**
+* [Sistem Persamaan Linier (SPL)](spl.md)
+* [Eliminasi Gaussian](eliminasi_gaussian.md)
+* [Determinan dan Invers Matriks](determinan_invers.md)
+* [Dekomposisi QR](dekomposisi_qr.md)
+
+## **Praktikum & Pemrograman**
+* [Operasi Matriks dengan Python (Jupyter Notebook)](notebook_contoh.ipynb)

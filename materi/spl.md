@@ -1,0 +1,119 @@
+# **Sistem Persamaan Linier (SPL)**
+
+## **Pengertian Sistem Persamaan Linier**
+
+Sistem Persamaan Linier (SPL) adalah sekumpulan dua atau lebih persamaan linier yang memiliki variabel yang sama dan harus dipenuhi secara bersamaan. Dengan kata lain, nilai variabel yang dicari harus membuat seluruh persamaan dalam sistem bernilai benar pada waktu yang sama.
+
+Istilah **sistem** menunjukkan bahwa beberapa persamaan tersebut saling berkaitan dan membentuk satu kesatuan. Sementara itu, istilah **linier** menunjukkan bahwa setiap variabel dalam persamaan berpangkat satu, sehingga hubungan antarvariabel membentuk garis lurus apabila digambarkan dalam bidang koordinat.
+
+Secara matematis, Sistem Persamaan Linier dapat dinyatakan sebagai kumpulan persamaan berbentuk:
+
+$$
+a_1x_1 + a_2x_2 + \cdots + a_nx_n = b
+$$
+
+dengan:
+- $a_1, a_2, \ldots, a_n$ adalah koefisien,
+- $x_1, x_2, \ldots, x_n$ adalah variabel,
+- $b$ adalah konstanta.
+
+Suatu Sistem Persamaan Linier dapat terdiri atas dua variabel, tiga variabel, atau lebih, tergantung pada banyaknya variabel yang terlibat dalam sistem tersebut.
+
+---
+
+## **Karakteristik Sistem Persamaan Linier**
+
+Sebuah sistem persamaan dikatakan sebagai Sistem Persamaan Linier apabila memenuhi karakteristik berikut:
+1. Variabel hanya berpangkat satu.
+2. Tidak terdapat perkalian antarvariabel.
+3. Tidak terdapat akar, logaritma, atau fungsi nonlinier lainnya yang melibatkan variabel.
+4. Setiap persamaan memiliki bentuk linier.
+5. Persamaan-persamaan dalam sistem memiliki variabel yang sama.
+
+---
+
+## **Tujuan Sistem Persamaan Linier**
+
+Tujuan utama dari Sistem Persamaan Linier adalah menentukan nilai variabel yang memenuhi seluruh persamaan dalam sistem secara simultan. Nilai-nilai tersebut disebut sebagai **solusi** atau **penyelesaian** dari Sistem Persamaan Linier.
+
+---
+
+## **Bentuk Umum Sistem Persamaan Linier**
+
+Untuk sistem dengan $n$ variabel dan $m$ persamaan, bentuk umumnya dapat dituliskan sebagai:
+
+$$
+\begin{aligned}
+a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n &= b_1 \\
+a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n &= b_2 \\
+&\vdots \\
+a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n &= b_m
+\end{aligned}
+$$
+
+di mana:
+- $a_{ij}$ merupakan koefisien,
+- $x_j$ merupakan variabel,
+- $b_i$ merupakan konstanta.
+
+---
+
+## **Definisi Persamaan Linier dan Non Linier**
+
+### **Persamaan Linier**
+
+Persamaan linier adalah persamaan matematika yang setiap variabelnya berpangkat satu dan tidak terdapat perkalian maupun pembagian antarvariabel. Grafik dari persamaan linier berbentuk garis lurus sehingga hubungan antara variabel-variabelnya bersifat linier.
+
+Bentuk umum persamaan linier satu variabel:
+$$
+ax + b = 0
+$$
+
+Bentuk umum persamaan linier dua variabel:
+$$
+ax + by = c
+$$
+
+dengan:
+- $a$, $b$, dan $c$ merupakan konstanta,
+- $x$ dan $y$ merupakan variabel,
+- $a$ dan $b$ tidak keduanya bernilai nol.
+
+#### **Karakteristik Persamaan Linier**
+1. Variabel hanya berpangkat satu.
+2. Tidak terdapat perkalian antarvariabel.
+3. Tidak terdapat akar variabel.
+4. Tidak terdapat fungsi nonlinier seperti logaritma, eksponensial, atau trigonometri yang melibatkan variabel.
+5. Grafiknya berbentuk garis lurus.
+
+#### **Contoh Persamaan Linier**
+1. $2x + 5 = 0$
+2. $3x - 4 = 8$
+3. $2x + y = 7$
+4. $4x - 3y = 12$
+5. $x + 2y - 5 = 0$
+
+---
+
+### **Persamaan Non Linier**
+
+Persamaan non linier adalah persamaan yang tidak memenuhi sifat-sifat persamaan linier. Pada persamaan non linier terdapat variabel yang berpangkat lebih dari satu, perkalian antarvariabel, akar variabel, atau fungsi nonlinier lainnya sehingga grafik yang dihasilkan tidak berbentuk garis lurus.
+
+#### **Karakteristik Persamaan Non Linier**
+1. Terdapat variabel dengan pangkat lebih dari satu.
+2. Terdapat perkalian antarvariabel.
+3. Terdapat akar yang melibatkan variabel.
+4. Dapat mengandung fungsi eksponensial, logaritma, atau trigonometri.
+5. Grafiknya berbentuk melengkung (tidak lurus).
+
+---
+
+## **Visualisasi Interaktif (GeoGebra)**
+
+[Ini Geogebra isi sendiri]
+
+---
+
+## **Kesimpulan**
+
+Sistem Persamaan Linier adalah kumpulan beberapa persamaan linier yang saling berkaitan dan memiliki variabel yang sama. Tujuan penyelesaiannya adalah mencari nilai variabel yang memenuhi seluruh persamaan secara bersamaan. Konsep ini menjadi dasar dalam berbagai metode penyelesaian matematika, terutama dalam Aljabar Linear dan representasi matriks.
