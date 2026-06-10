@@ -155,6 +155,63 @@ x - y &= 2
 \right.
 $$
 
+Pasangan nilai:
+$$
+x = 5,\quad y = 3
+$$
+
+
 1. **Solusi Tunggal**: Terdapat satu nilai variabel yang memenuhi seluruh persamaan (misal pada sistem di atas, solusinya adalah $x = 5$ dan $y = 3$).
 2. **Tak Hingga Solusi**: Terdapat tak hingga banyaknya nilai variabel yang memenuhi seluruh persamaan.
 3. **Tidak Ada Solusi**: Terdapat tidak ada nilai variabel yang memenuhi seluruh persamaan.
+
+### **Kesimpulan**
+Solusi Sistem Persamaan Linier adalah nilai variabel yang memenuhi seluruh persamaan dalam sistem secara bersamaan. Berdasarkan banyaknya penyelesaian yang dimiliki, suatu Sistem Persamaan Linier dapat memiliki satu solusi (solusi tunggal), tak hingga banyak solusi, atau tidak memiliki solusi sama sekali.
+
+---
+
+## **Representasi Matriks Sistem Persamaan Linier**
+### **Definisi Representasi Matriks Sistem Persamaan Linier**
+Representasi matriks Sistem Persamaan Linier (SPL) adalah cara menyatakan suatu sistem persamaan linier ke dalam bentuk matriks sehingga lebih ringkas dan mudah diolah menggunakan operasi matriks.
+
+Dalam representasi ini, koefisien-koefisien dari setiap variabel disusun ke dalam sebuah matriks yang disebut matriks koefisien, variabel-variabel disusun ke dalam matriks variabel, dan konstanta-konstanta disusun ke dalam matriks konstanta.
+
+Secara umum, Sistem Persamaan Linier dapat dituliskan dalam bentuk:
+$$
+AX = B
+$$
+
+dengan:
+- **$A$** = matriks koefisien,
+- **$X$** = matriks variabel,
+- **$B$** = matriks konstanta.
+
+Representasi matriks digunakan untuk mempermudah penyelesaian Sistem Persamaan Linier, terutama pada sistem yang memiliki banyak persamaan dan variabel.
+
+### **Contoh Representasi Matriks SPL**
+
+Misalkan diberikan Sistem Persamaan Linier sebagai berikut:
+
+$$ 
+\begin{aligned} 
+2x + 3y &= 7 \\ 
+4x - y &= 3 
+\end{aligned} 
+$$
+
+Representasi matriks dari sistem persamaan linier tersebut adalah:
+$$
+\begin{bmatrix}
+2 & 3 \\
+4 & -1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+= 
+\begin{bmatrix}
+7 \\
+3
+\end{bmatrix}
+$$
