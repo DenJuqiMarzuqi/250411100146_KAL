@@ -383,36 +383,30 @@ sagecell.makeSagecell({
     inputLocation: '#sagecell-matriks',
     evalButtonText: 'Proses',
     code: `
+# Matriks Koefisien
 A = Matrix([
-[1, 1, 1],
-[2,-1, 1],
-[1, 2,-1]
+    [1, 1, 1],
+    [2,-1, 1],
+    [1, 2,-1]
 ])
 
-B = Matrix([
-[6],
-[5],
-[4]
-])
+# Matriks Konstanta
+B = vector([6,5,4])
 
-AB = A.augment(B)
+# Matriks Augmentasi
+AB = A.augment(Matrix([[6],[5],[4]]))
 
 show(LatexExpr(r"\\textbf{Matriks Koefisien}"))
 show(A)
 
 show(LatexExpr(r"\\textbf{Matriks Konstanta}"))
-show(B)
+show(Matrix([[6],[5],[4]]))
 
 show(LatexExpr(r"\\textbf{Matriks Augmentasi}"))
 show(AB)
 
-x,y,z = var('x y z')
-
-eq1 = x + y + z == 6
-eq2 = 2*x - y + z == 5
-eq3 = x + 2*y - z == 4
-
-solusi = solve([eq1,eq2,eq3],x,y,z)
+# Menyelesaikan AX = B
+solusi = A.solve_right(B)
 
 show(LatexExpr(r"\\textbf{Solusi SPL}"))
 show(solusi)
