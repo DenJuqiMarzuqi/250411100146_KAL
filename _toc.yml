@@ -12,6 +12,8 @@ parts:
       - file: materi/determinan_invers
       - file: materi/dekomposisi_qr
       - file: materi/sistem_operasi
+      - file: materi/matriks_transpose
+      - file: materi/svd
   - caption: Tugas Kuliah
     chapters:
       - file: tugas/tugas_1
